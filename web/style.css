@@ -1,0 +1,26 @@
+html,body {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: #fff;
+    font-family: Tahoma,Arial,sans-serif;
+    font-size: 10pt;
+    color: #444;
+}
+
+h2 {
+    color: #444480;
+    text-align: center;
+}
+
+#content {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    box-shadow: #d4d4f0 0px 10px 15px;
+}
+
+#content .center {
+    text-align: center;
+}

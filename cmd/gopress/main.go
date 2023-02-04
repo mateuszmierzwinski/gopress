@@ -5,6 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/mateuszmierzwinski/gopress/internal/controllers"
 	"github.com/mateuszmierzwinski/gopress/internal/controllers/healthcheck"
+	"github.com/mateuszmierzwinski/gopress/internal/controllers/static"
 	"os"
 )
 
@@ -40,6 +41,7 @@ func main() {
 	// Add your controllers here
 	apiControllers := []controllers.APIController{
 		healthcheck.New(),
+		static.New(),
 	}
 
 	// General routing handling
