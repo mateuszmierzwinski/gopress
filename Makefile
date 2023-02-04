@@ -1,7 +1,8 @@
 GOPATH_DETECT=$(shell go env GOPATH)
 GO_SKIP_NONIMPORTANT=go list ./... | grep -v vendor/ | grep -v mocks/ | xargs -L1
 
-default: lint mods test sonar build build-docker
+default: lint mods test sonar build
+in-docker: lint mods test build
 
 .PHONY: lint
 lint:
