@@ -16,6 +16,7 @@ mods:
 
 .PHONY: test
 test:
+	@mkdir -p bin
 	$(GO_SKIP_NONIMPORTANT) go test -v -cover -coverprofile=bin/coverage.out
 
 .PHONY: build

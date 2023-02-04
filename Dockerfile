@@ -1,5 +1,6 @@
 FROM golang:1.19 as builder-environment
 WORKDIR /app
+
 COPY . .
 RUN make in-docker
 
